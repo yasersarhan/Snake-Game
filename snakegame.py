@@ -19,4 +19,6 @@ w.addch(food[0], food[1], curses.ACS_PI)
 
 key = curses.KEY_RIGHT
 while True:
+    next_key = w.getch()
+    key = key if next_key == -1 else next_key
     
